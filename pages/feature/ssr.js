@@ -24,6 +24,8 @@ export default function SSRDemo(props) {
 export async function getServerSideProps() {
 
    return {
-    props: { dateTime: Date().toLocaleString() },
+    props: { 
+	    dateTime: new Date().toISOString() 
+    },
   }
 }
