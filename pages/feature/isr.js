@@ -30,7 +30,7 @@ export default function ISRDemo(props) {
 export async function getStaticProps() {
 	return {
 		props: {
-		  dateTime: Date().toLocaleString(),
+		  dateTime: new Date().toISOString(),
 		},
 		revalidate: 15, // In seconds
 	}
