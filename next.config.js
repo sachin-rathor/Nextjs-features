@@ -3,7 +3,7 @@ module.exports = {
     return [
       {
         source: '/about',
-        destination: '/api/test.js',
+        destination: '/api/test',
         permanent: true,
       },
     ]
